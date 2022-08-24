@@ -16,11 +16,11 @@ phases:
 
 
 
-       - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin 484377306673.dkr.ecr.ap-south-1.amazonaws.com
+       - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin 860061945305.dkr.ecr.ap-south-1.amazonaws.com
 
 
 
-       - REPOSITORY_URI=484377306673.dkr.ecr.ap-south-1.amazonaws.com/audit-management-bharath
+       - REPOSITORY_URI=860061945305.dkr.ecr.ap-south-1.amazonaws.com/899594-audit-bharath
 
 
 
@@ -84,7 +84,7 @@ phases:
 
 
 
-       - printf '[{"name":"audit-management-bharath","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+       - printf '[{"name":"899594-audit-bharath","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 
 
 
